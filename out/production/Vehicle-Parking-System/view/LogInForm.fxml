@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginPopUp" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="800.0" layoutY="54.0" opacity="0.48" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/parkCar.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="86.0" fitWidth="73.0" layoutX="364.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/profile-user.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="cancelBtn" layoutX="77.0" layoutY="401.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="51.0" prefWidth="191.0" style="-fx-background-color: #1e90ff; -fx-background-radius: 2.0em;" text="CANCEL">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="LogInBtn" layoutX="525.0" layoutY="401.0" mnemonicParsing="false" onAction="#btnLoginManageOnAction" prefHeight="51.0" prefWidth="191.0" style="-fx-background-color: #1e90ff; -fx-background-radius: 2.0em;" text="LOG IN">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtUserName" layoutX="297.0" layoutY="155.0" opacity="0.84" prefHeight="51.0" prefWidth="340.0" style="-fx-background-radius: 1.0em; -fx-border-radius: 1.0EM; -fx-border-color: BLACK; -fx-border-width: 2;" />
+      <PasswordField fx:id="pwdPassword" layoutX="297.0" layoutY="247.0" opacity="0.84" prefHeight="51.0" prefWidth="340.0" style="-fx-background-radius: 1.0em; -fx-border-radius: 1.0EM; -fx-border-color: BLACK; -fx-border-width: 2;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6c5ce7eb" height="51.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Text layoutX="26.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG IN" wrappingWidth="129.08203125">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="143.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER NAME">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="144.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

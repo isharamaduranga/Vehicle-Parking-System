@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginContextAnchor" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ParkingHomeFormController">
+   <children>
+      <ImageView fitHeight="744.0" fitWidth="1287.0" layoutY="59.0" opacity="0.96" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/nhome.jpg" />
+         </image></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#576574" height="59.0" stroke="BLACK" strokeType="INSIDE" width="1287.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="7.0" text="PARKING SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbVehicleNo" layoutX="16.0" layoutY="149.0" opacity="0.9" prefHeight="52.0" prefWidth="271.0" style="-fx-border-color: BLUE; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em; -fx-border-width: 2;" />
+      <Label blendMode="GREEN" layoutX="67.0" layoutY="104.0" text="SELECT VEHICLE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbDriverName" layoutX="20.0" layoutY="445.0" opacity="0.8" prefHeight="52.0" prefWidth="271.0" style="-fx-border-color: blue; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em; -fx-border-width: 2;" />
+      <Label blendMode="GREEN" layoutX="106.0" layoutY="399.0" text="DRIVER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label blendMode="GREEN" layoutX="76.0" layoutY="252.0" text="VEHICLE TYPE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleType" layoutX="17.0" layoutY="298.0" opacity="0.85" prefHeight="52.0" prefWidth="271.0" style="-fx-border-color: blue; -fx-background-radius: 0.5em; -fx-border-radius: 0.5em; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <Label fx:id="slotNoToLabel" alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="581.0" opacity="0.9" prefHeight="189.0" prefWidth="311.0" style="-fx-background-color: #9980FA; -fx-border-color: white; -fx-border-width: 2;">
+         <font>
+            <Font name="System Bold" size="100.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" layoutX="21.0" layoutY="584.0" stroke="BLACK" strokeType="INSIDE" width="303.0" />
+      <Text layoutX="49.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR PARKING SLOT NUMBER" textAlignment="CENTER" wrappingWidth="246.99998179078102">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="setTimeDateToLabel" alignment="CENTER" contentDisplay="TOP" layoutX="443.0" layoutY="71.0" opacity="0.82" prefHeight="121.0" prefWidth="444.0" style="-fx-background-color: #576574; -fx-background-radius: 2.0em; -fx-border-color: red; -fx-border-radius: 2.0em; -fx-border-width: 2.5;" textFill="WHITE">
+         <font>
+            <Font name="Ebrima Bold" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button fx:id="btnPark" alignment="CENTER" layoutX="965.0" layoutY="202.0" mnemonicParsing="false" onAction="#parkVehicleOnAction" prefHeight="76.0" prefWidth="291.0" style="-fx-background-radius: 1.0EM; -fx-background-color: #a29bfe; -fx-border-radius: 1.0em; -fx-border-width: 4; -fx-border-color: #ff9f43;" text="PARK VEHICLE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelivery" alignment="CENTER" layoutX="965.0" layoutY="349.0" mnemonicParsing="false" onAction="#onDeliveryShiftOnAction" prefHeight="83.0" prefWidth="291.0" style="-fx-background-radius: 1.0EM; -fx-background-color: #a29bfe; -fx-border-color: #05c46b; -fx-border-width: 3; -fx-border-radius: 1.0em;" text="ON DELIVERY SHIFT">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="managemntClose" layoutX="953.0" layoutY="579.0" mnemonicParsing="false" onAction="#managementLogInOnAction" prefHeight="83.0" prefWidth="303.0" style="-fx-background-radius: 2.0EM; -fx-background-color: #C4E538; -fx-border-color: blue; -fx-border-radius: 2.0em; -fx-border-width: 3;" text="MANAGEMENT LOG IN">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Separator layoutX="682.0" layoutY="80.0" opacity="0.8" orientation="VERTICAL" prefHeight="102.0" prefWidth="2.0" style="-fx-background-color: black;" />
+      <Label fx:id="lblDay" alignment="CENTER" layoutX="478.0" layoutY="147.0" prefHeight="35.0" prefWidth="192.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
